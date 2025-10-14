@@ -67,6 +67,10 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tu-usuario)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
 
+## 🚀 Despliegue
+
+[![Vercel](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://potofcode.vercel.app/)
+
 ---
 
 ✨ Desarrollado con pasión por Miguel Pérez
