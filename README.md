@@ -9,7 +9,6 @@
 ## 🚀 Características
 
 - **Diseño Moderno**: Interfaz limpia y atractiva con un esquema de colores profesional.
-- **Responsive**: Se adapta perfectamente a dispositivos móviles, tablets y escritorio.
 - **Navegación Intuitiva**: Barra de navegación fija con acceso a mis redes sociales.
 - **Sección de Proyectos**: Muestra mis trabajos más recientes con descripciones detalladas.
 
@@ -38,8 +37,8 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/PotOfCode/personal-porfolio.git
+   cd personal-porfolio
    ```
 
 2. Instala las dependencias:
@@ -72,5 +71,3 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 [![Vercel](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://potofcode.vercel.app/)
 
 ---
-
-✨ Desarrollado con pasión por Miguel Pérez
