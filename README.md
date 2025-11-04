@@ -2,21 +2,26 @@
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ¡Hola! Soy Miguel Pérez, un apasionado desarrollador web con formación en Ingeniería de Sistemas. Este es mi portafolio personal donde muestro mis proyectos y habilidades en desarrollo web.
 
-## 🚀 Características
+## 🚀 Características Principales
 
 - **Diseño Moderno**: Interfaz limpia y atractiva con un esquema de colores profesional.
-- **Navegación Intuitiva**: Barra de navegación fija con acceso a mis redes sociales.
+- **Navegación Dinámica**: Sistema de rutas con React Router para una experiencia de usuario fluida.
+- **Formularios Interactivos**: Implementación de formularios con React Hook Form para una validación eficiente.
+- **Diseño Responsive**: Totalmente adaptable a diferentes tamaños de pantalla gracias a Tailwind CSS.
 - **Sección de Proyectos**: Muestra mis trabajos más recientes con descripciones detalladas.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Frontend**: 
-  - React 19
-  - Tailwind CSS
+- **Frontend**:
+  - React 19.2.0
+  - React Router DOM 7.9.5
+  - React Hook Form 7.65.0
+  - Tailwind CSS 3.4.18
   - HTML5 & CSS3
   - JavaScript (ES6+)
 
@@ -25,10 +30,11 @@
 ```
 src/
 ├── assets/
-│   ├── icons/       # Iconos SVG para redes sociales
-│   └── img/         # Imágenes de proyectos
-├── App.js          # Componente principal
-└── index.js        # Punto de entrada de la aplicación
+│   ├── icons/       # Iconos SVG
+│   └── img/         # Imágenes y recursos visuales
+├── pages/           # Componentes de página
+├── App.jsx          # Componente principal
+└── index.js         # Punto de entrada de la aplicación
 ```
 
 ## 🚀 Cómo Ejecutar el Proyecto
@@ -57,17 +63,23 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
 - `npm start`: Inicia la aplicación en modo desarrollo.
 - `npm run build`: Construye la aplicación para producción en la carpeta `build`.
+- `npm test`: Ejecuta las pruebas automatizadas.
+- `npm run eject`: Expone la configuración de webpack (usar con precaución).
 
-## 🌐 Contacto
+## 🌐 Despliegue
 
-¡No dudes en contactarme a través de mis redes sociales!
+El proyecto está configurado para ser desplegado en Vercel:
+
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Siéntete libre de abrir un issue o enviar un pull request.
+
+## 📬 Contacto
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:miguelperezrs28@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PotOfCode)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-pérez0802)
-
-## 🚀 Despliegue
-
-[![Vercel](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://potofcode.vercel.app/)
 
 ---
