@@ -149,8 +149,9 @@ export default function ContactForm() {
               placeholder="Escribe tu mensaje aquí..."
             ></textarea>
             {errors.Mensaje && <p class="text-red-500 mb-2">{errors.Mensaje.message}</p>}
-            <input type="hidden" name="_next" value="https://potofcode.vercel.app/Contact"/>
+            <input type="hidden" name="_next" value="https://potofcode.vercel.app/Thanks"/>
             <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_template" value="table"/>
             <button
               type="submit"
               class="block w-full max-w-md p-3 mb-4 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
