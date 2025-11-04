@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import home_icon from "../assets/icons/home.svg";
 import telegram_icon from "../assets/icons/telegram-icon.svg";
@@ -8,9 +8,11 @@ import linkedin_icon from "../assets/icons/linkedin-icon.svg";
 import logo_icon from "../assets/icons/logo.svg";
 
 export default function ContactForm() {
+  const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data, e) => {
     e.target.submit();
+    navigate('/');
   }
 
   return (
@@ -149,8 +151,8 @@ export default function ContactForm() {
               placeholder="Escribe tu mensaje aquí..."
             ></textarea>
             {errors.Mensaje && <p class="text-red-500 mb-2">{errors.Mensaje.message}</p>}
-            <input type="hidden" name="_next" value="https://potofcode.vercel.app/Contact"/>
             <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_next" value="/"/>
             <button
               type="submit"
               class="block w-full max-w-md p-3 mb-4 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
