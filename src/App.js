@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import ContactForm from './pages/ContactForm';
+import Thanks from './pages/Thanks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<ContactForm />} />
+          <Route path="/Thanks" element={<Thanks />} />
         </Routes>
       </div>
     </Router>
