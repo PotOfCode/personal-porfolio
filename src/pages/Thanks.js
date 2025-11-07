@@ -1,78 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import gmail_icon from "../assets/icons/gmail-icon.svg";
-import telegram_icon from "../assets/icons/telegram-icon.svg";
-import github_icon from "../assets/icons/github-icon.svg";
-import linkedin_icon from "../assets/icons/linkedin-icon.svg";
-import logo_icon from "../assets/icons/logo.svg";
+import { Navbar } from "../components/Navbar.js";
+import { Footer } from "../components/Footer.js";
 
 export default function Thanks() {
 
   return (
     <div class="flex flex-col bg-gradient-to-b from-slate-900 via-cyan-950 to-gray-900 min-h-screen min-w-full App">
       <header>
-        <nav
-          class="bg-gradient-to-r from-slate-900 via-gray-800 to-sky-950 h-20 border-b-8 border-b-slate-950 flex flex-row-reverse"
-          role="navigation"
-          aria-label="Navegación principal"
-        >
-          <div class="flex flex-row items-center justify-center">
-            <Link
-              to="/Contact"
-            >
-              <img
-                src={gmail_icon}
-                alt="Contacto"
-                title="Contacto"
-                class="size-6 sm:size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
-              />
-            </Link>
-            <a
-              href="https://www.linkedin.com/in/miguel-pérez0802"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src={linkedin_icon}
-                alt="Linkedin"
-                title="Linkedin"
-                class="size-6 sm:size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
-              />
-            </a>
-            <a
-              href="https://t.me/PotOfCode"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src={telegram_icon}
-                alt="Telegram"
-                title="Telegram"
-                class="size-6 sm:size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
-              />
-            </a>
-            <a
-              href="https://github.com/PotOfCode"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src={github_icon}
-                alt="Github"
-                title="Github"
-                class="size-6 sm:size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
-              />
-            </a>
-            <img
-              src={logo_icon}
-              alt="Logo"
-              class="w-8 absolute left-2 mr-5"
-            />
-          </div>
-          <p class="font-bold font-serif text-2xl absolute top-5 left-4 text-white pl-8">
-            PotOfCode
-          </p>
-        </nav>
+        <Navbar />
       </header>
 
       <main class="mx-8 sm:mx-16 md:mx-22 flex-grow">
@@ -97,9 +33,7 @@ export default function Thanks() {
         </section>
       </main>
       <footer class="text-white bg-gradient-to-l from-slate-900 to-gray-800 py-2 border-t border-gray pl-4 pr-4 z-50">
-        <p class="text-xs w-full h-full relative flex flex-row justify-evenly">
-          © 2025 PotOfCode
-        </p>
+        <Footer />
       </footer>
     </div>
   );
