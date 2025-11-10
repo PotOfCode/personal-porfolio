@@ -1,18 +1,37 @@
 import React from "react";
 import axios from "axios";
+import { Spinner } from "./Spinner.js";
 
 export function YugiApi({URLAPI}) {
   const [cards, setCards] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     axios.get(URLAPI)
       .then(response => {
         setCards(response.data.data);
+        setLoading(false);
       })
       .catch(error => {
         console.error("Error fetching data from Yugi API:", error);
+        setError(error);
+        setLoading(false);
       });
   }, []);
+
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center">
+        <Spinner /> 
+      </div>
+    );
+  }
+
+  if (error) {
+    return <div className="flex justify-center items-center text-red-500 font-bold text-xl p-4">Hubo un problema al cargar la información: {error.message}</div>;
+  }
 
   return (
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
