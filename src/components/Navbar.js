@@ -4,6 +4,7 @@ import telegram_icon from "../assets/icons/telegram-icon.svg";
 import github_icon from "../assets/icons/github-icon.svg";
 import linkedin_icon from "../assets/icons/linkedin-icon.svg";
 import logo_icon from "../assets/icons/logo.svg";
+import collection from "../assets/icons/cards.svg";
 import home from "../assets/icons/home.svg";
 
 export  function Navbar() {
@@ -11,10 +12,15 @@ export  function Navbar() {
     const currentPath = location.pathname;
 
     const isContactRoute = currentPath === '/Contact';
+    const isCollectionRoute = currentPath === '/Collection';
 
     const linkTo = isContactRoute ? '/' : '/Contact';
     const Icon = isContactRoute ? home : gmail_icon;
     const linkText = isContactRoute ? 'Volver a Home' : 'Contacto';
+    
+    const linkCollection = isCollectionRoute ? '/' : '/Collection';
+    const IconCards = isCollectionRoute ? home : collection;
+    const linkTextCards = isCollectionRoute ? 'Volver a Home' : 'Archivos de Coleccionista';
     
     return (
         <nav
@@ -69,6 +75,16 @@ export  function Navbar() {
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </a>
+            <Link
+              to={linkCollection}
+            >
+              <img
+                src={IconCards}
+                alt={linkTextCards}
+                title={linkTextCards}
+                class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
+              />
+            </Link>
             <img
               src={logo_icon}
               alt="Logo"

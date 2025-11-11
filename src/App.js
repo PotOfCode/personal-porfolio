@@ -7,6 +7,8 @@ import {
 import Home from './pages/Home';
 import ContactForm from './pages/ContactForm';
 import Thanks from './pages/Thanks';
+import Collection from './pages/CollectionFiles';
+import Album from './pages/AlbumCards';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<ContactForm />} />
           <Route path="/Thanks" element={<Thanks />} />
+          <Route path="/Collection" element={<Collection />} />
+          <Route path="/Album" element={<Album />} />
         </Routes>
       </div>
     </Router>

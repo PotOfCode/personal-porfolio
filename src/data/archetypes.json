@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Ryzeal",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=Ryzeal",
+    "cover": "/assets/album-cover/ryzeal.png"
+  },
+  {
+    "label": "Orcust",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=Orcust",
+    "cover": "/assets/album-cover/orcust.png"
+  },
+  {
+    "label": "Fiendsmith",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Fiendsmith",
+    "cover": "/assets/album-cover/fiendsmith.png"
+  },
+  {
+    "label": "Sky Striker",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Sky Striker",
+    "cover": "/assets/album-cover/sky-striker.png"
+  },
+  {
+    "label": "Memento",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=Memento",
+    "cover": "/assets/album-cover/memento.png"
+  },
+  {
+    "label": "Kashtira",
+    "apiURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=Kashtira",
+    "cover": "/assets/album-cover/kashtira.jpg"
+  }
+]
