@@ -9,6 +9,7 @@ import about_me from "../assets/icons/about-me.svg";
 import photo from "../assets/img/photo.webp";
 import { Navbar } from "../components/Navbar.js";
 import { Footer } from "../components/Footer.js";
+import { motion } from "framer-motion";
 
 const Home = () => (
     <div class="bg-gradient-to-b from-slate-900 via-cyan-950 to-gray-900 min-h-screen min-w-full App">
@@ -19,14 +20,18 @@ const Home = () => (
       <main class="mx-8 sm:mx-16 md:mx-22">
         <section class="flex flex-col items-center min- mb-24">
           <h1 class="font-bold text-[#FFE9AE] text-4xl pt-4 pb-4">Portfolio</h1>
-          <img
+          <motion.img
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition= {{ duration: 0.8 }}
+            whileTap={{ scale: 0.90 }}
             src={profile}
             alt="Perfil"
             class="object-cover rounded-full size-40"
           />
-          <h2 class="font-bold text-center text-[#FFE9AE] text-4xl mt-4">
+          <motion.h2 initial={{ scale: 0 }} animate={{ scale: 1 }} transition= {{ duration: 1 }} class="font-bold text-center text-[#FFE9AE] text-4xl mt-4">
             Saludos, soy PotOfCode
-          </h2>
+          </motion.h2>
           <p class="text-white text-center mx-4 sm:text-left sm:mx-8 md:mx-16 lg:mx-24 p-2 mt-4 font-semibold text-xl">
             Estudiante de Ingeniería de Sistemas y desarrollador web. Apasionado
             por el aprendizaje continuo y la creación de experiencias digitales.
@@ -40,9 +45,9 @@ const Home = () => (
                   alt="Proyectos"
                   class="size-16 pr-4"
                 />
-                <h3 class="font-bold text-white text-4xl">
+                <motion.h3 whileHover={{ scale: 1.1 }} class="font-bold text-white text-4xl">
                   Proyectos
-                </h3>
+                </motion.h3>
             </div> 
           </div> 
           <article class="sm:grid grid-cols-2 grid-flow-row auto-cols-max gap-4">

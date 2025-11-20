@@ -6,6 +6,7 @@ import linkedin_icon from "../assets/icons/linkedin-icon.svg";
 import logo_icon from "../assets/icons/logo.svg";
 import collection from "../assets/icons/cards.svg";
 import home from "../assets/icons/home.svg";
+import { motion } from "framer-motion";
 
 export  function Navbar() {
     const location = useLocation();
@@ -32,10 +33,11 @@ export  function Navbar() {
             <Link
               to={linkTo}
             >
-              <img
+              <motion.img
                 src={Icon}
                 alt={linkText}
                 title={linkText}
+                whileHover={{ y: -5 }}
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </Link>
@@ -44,10 +46,11 @@ export  function Navbar() {
               target="_blank"
               rel="noopener"
             >
-              <img
+              <motion.img
                 src={linkedin_icon}
                 alt="Linkedin"
                 title="Linkedin"
+                whileHover={{ y: -5 }}
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </a>
@@ -56,10 +59,11 @@ export  function Navbar() {
               target="_blank"
               rel="noopener"
             >
-              <img
+              <motion.img
                 src={telegram_icon}
                 alt="Telegram"
                 title="Telegram"
+                whileHover={{ y: -5 }}
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </a>
@@ -68,20 +72,22 @@ export  function Navbar() {
               target="_blank"
               rel="noopener"
             >
-              <img
+              <motion.img
                 src={github_icon}
                 alt="Github"
                 title="Github"
+                whileHover={{ y: -5 }}
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </a>
             <Link
               to={linkCollection}
             >
-              <img
+              <motion.img
                 src={IconCards}
                 alt={linkTextCards}
                 title={linkTextCards}
+                whileHover={{ y: -5 }}
                 class="size-8 md:size-9 mr-4 invert brightness-50 hover:invert-0 hover:brightness-100 transition-all duration-500"
               />
             </Link>
